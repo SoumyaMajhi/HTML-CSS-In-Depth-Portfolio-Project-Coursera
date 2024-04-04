@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Dancing+Script&family=Lobster&family=Montserrat&family=Pacifico&display=swap');
+
+/* 
+font-family: 'Autour One', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pacifico', cursive;
+ */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    /* font-family: 'Lobster', cursive; */
+    margin: 0;
+    padding: 0;
+    background-color: #aed0f1;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+/* Header Styles */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 0;
+}
+
+/* Navigation Styles */
+.navbar {
+    font-family: 'Lobster', cursive;
+    background-color: #343a40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.nav-item {
+    padding: 15px;
+}
+
+.nav-item a {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #ffc107;
+}
+
+/* Main Content Styles */
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.home,
+.menu,
+.new-arrivals,
+.about {
+    /* margin-bottom: 30px; */
+}
+
+body h2{
+    font-family: 'Lobster', cursive;
+}
+body p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem; 
+    font-weight: bold;
+}
+
+.home,
+.menu,
+.new-arrivals,
+.about{
+    padding: 2rem;
+    border-radius: 25px;
+    background-color: #ecdede;
+    margin-bottom: 1rem;
+}
+
+.menu-t {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px; 
+    font-weight: bold;
+}
+.menu-t th{
+    background-color: #343a40;
+    color: #fff;
+}
+
+.menu-t th, .menu-t td {
+    border: 1px solid #ddd;
+    padding: 0.5rem; 
+    padding-left: 1rem;
+}
+
+.menu-t tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.menu-t tr:nth-child(odd) {
+    background-color: #dbd9d9;
+}
+
+/* New Arrivals Styles */
+.new-arrivals {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.food-item {
+    flex-basis: calc(33% - 2.5rem); 
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 grey;
+    border-radius: 10px;
+}
+
+.food-item h6 {
+    font-size: 1.2rem; 
+}
+
+
+.food-item img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid rgb(137, 204, 235);
+    border-radius: 7%;
+    box-shadow: 0 4px 8px 0 grey;
+}
+
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+.review-content{
+    display: flex;
+    flex-basis: calc(50% - 2.5rem); 
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 grey;
+    border-radius: 10px;
+}
+.review-content p{
+    font-size: 0.8rem;
+}
+.rev-title img{
+    max-width: 5rem;
+    height: auto;
+    border: 2px solid rgb(137, 204, 235);
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 grey;
+    margin: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #7c7e80;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+}
+.footer-img-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+footer img{
+    max-width: 5rem;
+}
+
+.cont-h {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.address p {
+   font-size: 0.8rem;
+}
+
+.copyright a{
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+    .boxes,
+    .reviews{
+        flex-direction: column;
+        align-items: center;
+    }
+}
